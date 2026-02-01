@@ -96,7 +96,7 @@
   <button class="no" disabled>No 🙈</button>
 
   <div class="gif" id="yesGif">
-    <img src="https://media.giphy.com/media/l0MYB8Ory7Hqefo9a/giphy.gif" alt="Romantic Celebration">
+    <img src="https://media.giphy.com/media/3oz8xKaR836UJOYeOc/giphy.gif" alt="Party Celebration">
     <p>It’s a love story, baby just say YES 💕🎉</p>
   </div>
 </div>
