@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Will You Be My Valentine?</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ffe6eb, #fff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    width: 90%;
+    max-width: 350px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+  }
+
+  h2 {
+    color: #ff4d6d;
+    margin-bottom: 20px;
+  }
+
+  button {
+    padding: 12px 30px;
+    margin: 10px;
+    border-radius: 25px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .yes {
+    background: #ff4d6d;
+    color: white;
+  }
+
+  .no {
+    background: #ddd;
+  }
+
+  .gif {
+    margin-top: 20px;
+    display: none;
+  }
+
+  img {
+    width: 100%;
+    border-radius: 15px;
+  }
+</style>
+</head>
+
+<body>
+
+<div class="card">
+  <h2>Will you be my Valentine? 💖</h2>
+
+  <button class="yes" onclick="showYes()">Yes 💕</button>
+  <button class="no" onclick="showNo()">No 🙈</button>
+
+  <div class="gif" id="yesGif">
+    <img src="https://media.giphy.com/media/5GoVLqeAOo6PK/giphy.gif" alt="Party Celebration">
+    <p>YAYYYY!!! 🎉🥳💃🕺</p>
+  </div>
+
+  <div class="gif" id="noMsg">
+    <p>Hmm… I’ll ask again 😜❤️</p>
+  </div>
+</div>
+
+<script>
+  function showYes() {
+    document.getElementById("yesGif").style.display = "block";
+    document.getElementById("noMsg").style.display = "none";
+  }
+
+  function showNo() {
+    document.getElementById("noMsg").style.display = "block";
+    document.getElementById("yesGif").style.display = "none";
+  }
+</script>
+
+</body>
+</html>
